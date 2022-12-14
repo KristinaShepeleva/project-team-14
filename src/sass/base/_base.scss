@@ -21,7 +21,6 @@ body {
         (min-resolution: 2dppx)  {
                 background-image: url(../images/bg-img/backgroud_mobile_2x.jpg);
             }
-    
 
     /* tablet 1x */
     @media screen and (min-width: 481px) {
@@ -33,7 +32,6 @@ body {
         (min-resolution: 2dppx) {
             background-image:  url(../images/bg-img/background_tablet_2x.jpg);
         } }
-        
 
     /* desktop 1x */
     @media screen and (min-width: 1200px) {
@@ -47,16 +45,11 @@ body {
     } }
 }
 
-
-
-
-
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
-
 
     @media screen and (min-width: 480px) {
         width: 480px;
