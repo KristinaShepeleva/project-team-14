@@ -1,8 +1,11 @@
 @import './common';
 @import './example';
 
-@import './variables';
-@import './visually-hidden';
+//base
+@import './base/variables';
+@import './base/base';
+@import './base/reset';
+@import './base/visually-hidden';
 
 @import './header';
 @import './hero';
