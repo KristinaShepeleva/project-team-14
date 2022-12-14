@@ -1,0 +1,29 @@
+:root {
+    //colors
+    --primary-text-color: #131313;
+    --whity-color: #ffffff;
+    --black-color: #000000;
+    --yellow-accent: #F8D24E;
+    --yellow-bg: #EFD478;
+    --green-accent: #9CBE8F;
+    --green-bg: #84A178;
+    --green-bg-two: #AEC6A5;
+    --brown-accent: #D6936D;
+    --light-grey: #E1E1E1;
+    --disabled-grey: #ABABAB;
+
+    //action colors
+    --green-hover-focus: #0A8817;
+
+    //linear-gradient
+    --yellow-linear-gradient: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+        #D9D9D9;
+    --green-linear-gradient: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+        #D9D9D9;
+    --brown-linear-gradient: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
+        #D9D9D9;
+
+    //shadows
+    --shadows-products: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    --shadows-contacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
