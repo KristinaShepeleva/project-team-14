@@ -1,10 +1,26 @@
 <header class="page-header">
   <div class="container page-header_container">
-    <a class="logo" href="#">
+    <a class="logo" href="index.html" aria-label="Ice cream logo">
       <svg class="logo_img" width="40" height="37">
         <use href="./images/symbol-defs.svg#icon-ice-crema"></use>
       </svg>
     </a>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="index.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_item">
+          <a href="#about" class="nav_link">How it’s made?</a>
+        </li>
+        <li class="nav_item">
+          <a href="#products" class="nav_link">Our products</a>
+        </li>
+        <li class="nav_item">
+          <a href="#contact" class="nav_link">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <!-- Кнопка для мобільного меню -->
     <button
       class="menu-toggle js-open-menu"
@@ -15,6 +31,31 @@
         <use href="./images/symbol-defs.svg#eva_menu-fill"></use>
       </svg>
     </button>
-    <!-- Меню для -->
+    <button type="button" class="">Buy now</button>
   </div>
 </header>
+
+<!-- Меню для мобілки та таблет-->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-icon-close" width="40" height="40">
+      <use href="./images/symbol-defs.svg#ep_close"></use>
+    </svg>
+  </button>
+  <!-- Потрібно на інші розділи додати якір через id="about" -->
+  <ul class="mobile-menu">
+    <li class="mobile-menu_item">
+      <a href="index.html" class="link mobile-menu_link">Home</a>
+    </li>
+    <li class="mobile-menu_item">
+      <a href="#about" class="link mobile-menu_link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu_item">
+      <a href="#products" class="link mobile-menu_link">Our products</a>
+    </li>
+    <li class="mobile-menu_item">
+      <a href="#contact" class="link mobile-menu_link">Contact</a>
+    </li>
+  </ul>
+  <button type="button" class="mobile-menu_button">Buy now</button>
+</div>
