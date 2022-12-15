@@ -1,12 +1,13 @@
 @import './common';
 
 
-//base
+//base styles
 @import './base/variables';
 @import './base/base';
 @import './base/reset';
 @import './base/visually-hidden';
 
+//main stalys
 @import './header';
 @import './hero';
 @import './products';
@@ -16,3 +17,11 @@
 @import './reviews';
 @import './contacts';
 @import './footer';
+
+
+//modal styles
+@import './modal_buy_now';
+@import './modal_info_product';
+@import './modal_read_more';
+@import './modal_location';
+@import './modal_franchise';
