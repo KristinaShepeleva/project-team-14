@@ -1,60 +1,60 @@
-.overlay {
-  opacity: 0;
-  visibility: hidden;
+// .overlay {
+//   opacity: 0;
+//   visibility: hidden;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: 0.3s all;
-}
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   z-index: 20;
+//   transition: 0.3s all;
+// }
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
+// .modal.active,
+// .overlay.active {
+//   opacity: 1;
+//   visibility: visible;
+// }
 
-.backdrop {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  padding: 0 15px;
+// .backdrop {
+//   position: relative;
+//   width: 100vw;
+//   height: 100vh;
+//   padding: 0 15px;
 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
+//   opacity: 1;
+//   visibility: visible;
+//   pointer-events: initial;
 
-  backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.4);
+//   backdrop-filter: blur(2px);
+//   background-color: rgba(0, 0, 0, 0.4);
 
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
+//   transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+//     visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-.modal {
-  opacity: 0;
-  visibility: hidden;
+// .modal {
+//   opacity: 0;
+//   visibility: hidden;
 
-  width: 100%;
-  max-width: 500px;
+//   width: 100%;
+//   max-width: 500px;
 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30;
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 30;
 
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 30px;
-  border-radius: 3px;
-  background-color: #fff;
-  transition: 0.3s all;
-}
+//   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+//   text-align: center;
+//   padding: 30px;
+//   border-radius: 3px;
+//   background-color: #fff;
+//   transition: 0.3s all;
+// }
 .read-more-modal {
   background: #fcfcfc;
   border: 2px solid #f8d24e;
