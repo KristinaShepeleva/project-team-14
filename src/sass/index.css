@@ -133,52 +133,16 @@ ul, li {
   overflow: hidden;
 }
 
-.reviews {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+.page-header_container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  outline: 2px solid green;
+  outline-offset: -2px;
 }
-@media screen and (max-width: 768px) {
-  .reviews {
-    background-image: url(../images/customer-reviews/icecream-bcg.png), linear-gradient(to bottom, #84a178 24px, #f5f5f5 24px, #f5f5f5 100%);
-  }
-}
-@media screen and (max-width: 768px) and (min-resolurion: 2dppx) {
-  .reviews {
-    background-image: url(../images/customer-reviews/icecream-bcg-2x.png);
-  }
-}
-@media screen and (min-width: 768px) {
-  .reviews {
-    max-width: 100%;
-    padding-top: 300px;
-    padding-bottom: 350px;
-    background-position: 0 150px, 0 0;
-    background-size: contain;
-    background-image: url(../images/customer-reviews/icecream-bcg-tablet.png), linear-gradient(to bottom, #84a178 150px, #f5f5f5 150px, #f5f5f5 100%);
-  }
-}
-@media screen and (min-width: 768px) and (min-resolurion: 2dppx) {
-  .reviews {
-    background-image: url(../images/customer-reviews/icecream-bcg-tablet-2x.png);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .reviews {
-    max-width: 100%;
-    padding-top: 300px;
-    padding-bottom: 200px;
-    background-position: 0 80px, 0 0;
-    background-size: cover;
-    background-image: url(../images/customer-reviews/icecream-bcg-desktop.png), linear-gradient(to bottom, #84a178 80px, #f5f5f5 80px, #f5f5f5 100%);
-  }
-}
-@media screen and (min-width: 1200px) and (min-resolurion: 2dppx) {
-  .reviews {
-    background-image: url(../images/customer-reviews/icecream-bcg-desktop-2x.png);
-  }
+
+.logo {
+  padding-left: auto;
 }
 
 .reviews__slider {
