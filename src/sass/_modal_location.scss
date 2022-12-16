@@ -1,0 +1,109 @@
+.backdrop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 15px;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.location-modal {
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 468px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.location-modal__title {
+  padding-bottom: 20px;
+}
+
+.location-modal__thumb {
+  margin-bottom: 20px;
+}
+
+.close-btn-modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  box-sizing: border-box;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .franchise-modal__icon-clse:hover & {
+    fill: currentColor;
+    transform: rotate(90deg);
+  }
+}
+
+.modal-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: inherit;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--yellow-accent);
+  color: var(--primary-text-color);
+
+  &:hover {
+    background-color: var(--green-hover-focus);
+  }
+}
+.location-modal__link-map {
+  font-size: 12px;
+  line-height: 15px;
+}

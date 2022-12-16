@@ -1,0 +1,128 @@
+<div class="info-product-modal modal" data-modal="product">
+  <button class="info-product-modal__close-btn close-btn-modal js-modal-close">
+    <svg class="info-product-modal__icon-clse">
+      <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+    </svg>
+  </button>
+  <h2 class="info-product-modal__title">Chololate icecream</h2>
+  <div class="info-product-modal__thumb">
+    <picture class="info-product-modal__img">
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/modal.img/ellipse@1x-min.png 1x,
+          ./images/modal.img/ellipse@2x-min.png 2x
+        "
+        type="image/jpg"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/modal.img/ellipse@1x-min.png 1x,
+          ./images/modal.img/ellipse@2x-min.png 2x
+        "
+        type="image/jpg"
+      />
+      <img src="./images/modal.img/ellipse@1x-min.png" alt="ice cream" />
+    </picture>
+  </div>
+  <div>
+    <ul class="info-product-modal__list">
+      <li class="info-product-modal__item">
+        <div class="info-product-modal__wrapper">
+          <span class="wrapper-product__numb">320</span>
+          <span class="wrapper-product__text">kcal</span>
+        </div>
+      </li>
+      <li class="info-product-modal__item">
+        <div class="info-product-modal__wrapper">
+          <span class="wrapper-product__numb">4g </span>
+          <span class="wrapper-product__text">Prote...</span>
+        </div>
+      </li>
+      <li class="info-product-modal__item">
+        <div class="info-product-modal__wrapper">
+          <span class="wrapper-product__numb">8,2g</span>
+          <span class="wrapper-product__text">Fats</span>
+        </div>
+      </li>
+      <li class="info-product-modal__item">
+        <div class="info-product-modal__wrapper">
+          <span class="wrapper-product__numb">40,4g</span>
+          <span class="wrapper-product__text">Carbs</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <p class="info-product-modal__pretitle">Ingredients</p>
+  <ul class="info-product-modal__ingred-list">
+    <li class="info-product-modal__ingred-item">
+      <span class="ingred-text">Milk</span
+      ><span class="ingred-text">100ml</span>
+    </li>
+    <li class="info-product-modal__ingred-item">
+      <span class="ingred-text">Belgian chocolate</span
+      ><span class="ingred-text">20g</span>
+    </li>
+    <li class="info-product-modal__ingred-item">
+      <span class="ingred-text">Cream</span
+      ><span class="ingred-text">150 ml</span>
+    </li>
+    <li class="info-product-modal__ingred-item">
+      <span class="ingred-text">Cocoa powder</span
+      ><span class="ingred-text">30g</span>
+    </li>
+    <li class="info-product-modal__ingred-item">
+      <span class="ingred-text">Sugar</span><span class="ingred-text">40g</span>
+    </li>
+    <li class="info-product-modal__ingred-item">
+      <span class="ingred-text">Vanilla sugar</span
+      ><span class="ingred-text">10g</span>
+    </li>
+  </ul>
+  <form class="info-product__form" action="franchis-modal__form">
+    <label class="info-product-modal__field">
+      <input
+        class="info-product__input"
+        type="text"
+        name="name"
+        placeholder="Name"
+        required
+      />
+    </label>
+
+    <label class="info-product__field">
+      <input
+        class="info-product__input"
+        type="tel"
+        name="name"
+        placeholder="Phone"
+        required
+      />
+    </label>
+
+    <label class="info-product__field">
+      <input
+        class="info-product__input"
+        type="email"
+        name="name"
+        placeholder="Email"
+        required
+      />
+    </label>
+
+    <label class="info-product__field">
+      <textarea
+        class="info-product__message"
+        name="comments"
+        rows="8"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+    <button class="info-product__modal-btn modal-btn" type="submit">
+      Submit
+    </button>
+  </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
