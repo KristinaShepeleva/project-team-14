@@ -107,3 +107,6 @@ dist
 
 # TernJS port file
 .tern-port
+src/js/menu-mobile.js
+src/partials/header.html
+src/js/menu-mobile.js
