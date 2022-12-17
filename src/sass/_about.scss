@@ -1,5 +1,5 @@
 .about {
-    background-color: #84A178;
+    background-color: var(--green-bg);
     color: white;
      
     padding-top: 61px;
@@ -67,7 +67,7 @@
         gap: 38px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;    
     gap: 109px;
@@ -193,8 +193,24 @@ margin-bottom: 54px;
     border-radius: 10px;
     border-color: transparent;
     margin-bottom: 50px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width:1200px) {
+&:hover,
+&:focus {
+    background-color: var(--green-hover-focus);
+}    
+&:focus {
+    color: #FCFCFC;
+}
+&:disabled {
+    background-color: var(--disabled-grey);
+}
+
+    @media screen and (min-width:768px) {
         margin-left: 0;
     }
+}
+.about__icon {
+    fill: currentColor;
 }
