@@ -1,7 +1,6 @@
-import './js/swiper.js';
+import './js/swiper';
 
 import './js/menu-mobile';
-
 
 
 
