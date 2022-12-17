@@ -1,14 +1,6 @@
 .contacts {
-  padding-top: 40px;
   padding-bottom: 60px;
-  background-color: var(--green-bg);
-}
-
-.contacts__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--green-linear-gradient);
 }
 
 .text__styles {
@@ -16,15 +8,44 @@
   font-size: 12px;
 }
 
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
 .contacts__item {
-  max-width: 280px;
-  margin-right: 0;
   background-color: #fcfcfc;
   box-shadow: var(--shadows-contacts);
   border-radius: 24px;
 
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px) / 3);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 64px) / 3);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -79,7 +100,7 @@
 
 .address__link {
   line-height: 1.6;
-  color: var(--disabled-grey);
+  color: var(--primary-text-color);
 }
 
 .address__link:not(:last-child) {
@@ -90,6 +111,19 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
 }
 
 .contacts__btn {
@@ -107,6 +141,7 @@
   line-height: 1.28;
   cursor: pointer;
   border-radius: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__btn-first {
@@ -114,12 +149,34 @@
   background-color: var(--yellow-accent);
   border: none;
   margin-bottom: 16px;
+
+  &:hover {
+    background-color: var(--green-hover-focus);
+  }
+
+  &:focus {
+    color: var(--whity-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
 }
 
 .contacts__btn-second {
   color: var(--black-color);
   border: 2px solid var(--yellow-accent);
   background-color: var(--green-bg);
+
+  &:hover {
+    border: 2px solid var(--green-hover-focus);
+  }
+
+  &:focus {
+    color: var(--whity-color);
+    border: 2px solid var(--green-hover-focus);
+  }
 }
 
 .contacts__btn-icon {
