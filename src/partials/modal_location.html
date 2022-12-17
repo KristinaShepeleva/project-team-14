@@ -1,0 +1,53 @@
+<div class="location-modal modal" data-modal="location">
+    <button type="button" class="location-modal__close-btn close-btn-modal js-modal-close">
+      <svg class="location-modal__icon-close">
+        <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="location-modal__title">Our Locations</h2>
+    <div class="location-modal__thumb">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/modal.img/map-m@1x-min.webp 1x,
+            ./images/modal.img/map-m@2x-min.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/modal.img/map-m@1x-min.jpg 1x,
+            ./images/modal.img/map-m@2x-min.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/modal.img/map-s@1x-min.webp 1x,
+            ./images/modal.img/map-s@2x-min.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/modal.img/map-s@2x-min.jpg 1x,
+            ./images/modal.img/map-s@1x-min.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img src="./images/modal.img/map-s@1x-min.jpg" alt="map" />
+      </div>
+      <span class="modal-btn location-modal__link-map "><a
+          href="https://goo.gl/maps/maSsx5Yk2prJAdCM9"
+          target="_blank"
+          rel="noopener, noreferrer, nofollow"
+          class=""
+          >Open map</a
+        ></span>
+      </picture>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
