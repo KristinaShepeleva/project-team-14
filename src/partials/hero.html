@@ -3,43 +3,11 @@
     <h1 class="hero_title">
       ice cream made with <span class="hero_title--accent">passion</span>
     </h1>
-    <ul class="hero-buttons_list">
-      <li class="hero-buttons_item--first">
-        <a href="#products" class="hero-buttons_link--first">Products</a>
-      </li>
-      <li class="hero-buttons_item">
-        <a href="#about" class="hero-buttons_link--second">How it’s made?</a>
-      </li>
-    </ul>
-    <!-- <picture>
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./images/hero/points_l@1x.png 1x,
-          ./images/hero/points_l@2x.png 2x
-        "
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/hero/points_m@1x.png 1x,
-          ./images/hero/points_m@2x.png 2x
-        "
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ./images/hero/points_s@1x.png 1x,
-          ./images/hero/points_s@2x.png 2x
-        "
-      />
-      <img
-        src="./images/hero/points_s@1x.png"
-        alt="background hero"
-        class="hero_img-first"
-        loading="lazy"
-      />
-    </picture> -->
+    <div class="hero-buttons_list">
+      <a href="#products" class="hero-buttons_link--first">Products</a>
+      <a href="#about" class="hero-buttons_link--second">How it’s made?</a>
+    </div>
+    <!-- Велике зображення морозива -->
     <picture>
       <source
         media="(min-width: 1200px)"
@@ -64,10 +32,56 @@
       />
       <img
         src="./images/hero/points_s@1x.png"
-        alt="background hero"
-        class="hero_img--second"
+        alt="big ice cream"
+        class="hero_img--first"
         loading="lazy"
       />
     </picture>
+    <!-- Зображення тарілки з морозивом -->
+    <div class="hero_thumb--big">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/ice_cream_small_l@1x.png 1x,
+            ./images/hero/ice_cream_small_l@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/ice_cream_small_m@1x.png 1x,
+            ./images/hero/ice_cream_small_m@2x.png 2x
+          "
+        />
+
+        <img
+          src="./images/hero/ice_cream_small_m@1x.png"
+          alt="plate of ice cream"
+          class="hero_img--second"
+          loading="lazy"
+        />
+      </picture>
+      <div class="hero_thumb--small">
+        <p class="hero_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="hero_arrow" width="40" height="16">
+          <use href="./images/symbol-defs.svg#icon-arrow-long"></use>
+        </svg>
+      </div>
+    </div>
+    <!-- Статистика -->
+    <ul class="statistics_list">
+      <li class="statistics_item">
+        <p class="statistics_text-first">16</p>
+        <p class="statistics_text-second">cafes</p>
+      </li>
+      <li class="statistics_item">
+        <p class="statistics_text-first">23</p>
+        <p class="statistics_text-second">food trucks</p>
+      </li>
+    </ul>
   </div>
 </section>
