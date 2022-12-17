@@ -1,0 +1,96 @@
+.hero {
+  background-color: #84a178;
+}
+.hero_container {
+  padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+  }
+  outline: 2px solid green;
+  outline-offset: -2px;
+
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+
+  //   mobile screen
+  background-image: url(../images/hero/points_s@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/points_s@2x.png);
+  }
+
+  // tablet screen
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/hero/points_m@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/points_m@2x.png);
+  }
+
+  // desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/hero/points_l@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/points_l@2x.png);
+  }
+}
+
+.hero_title {
+  margin-bottom: 32px;
+  max-width: 247px;
+
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
+}
+
+.hero_title--accent {
+  font-size: 34px;
+  line-height: calc(33 / 34);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
+}
+
+// Оформлення кнопок
+
+.hero-buttons_list {
+  display: flex;
+}
+// .hero-buttons_item--first {
+//   padding: 11px 26px;
+//   margin-right: 12px;
+//   border: 2px solid #f8d24e;
+//   border-radius: 8px;
+// }
+// .hero-buttons_link--first {
+//   //   color: beige;
+//   //   padding: 11px 26px;
+//   //   margin-right: 12px;
+//   //   border: 2px solid #f8d24e;
+//   //   border-radius: 8px;
+// }
