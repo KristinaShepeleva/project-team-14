@@ -1,0 +1,113 @@
+.advantages {
+  padding-bottom: 32px;
+
+  background-color: #84a178;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+}
+
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
+.advantages__item {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
+}
+
+.advantages__item::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f8d24e;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__item-cow {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 28px;
+  }
+
+  &::before {
+    background-image: url(../images/advanteges/cow.png);
+  }
+}
+.advantages__item-weight {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 22px;
+  }
+  &::before {
+    background-image: url(../images/advanteges/weight.png);
+  }
+}
+.advantages__item-ice {
+  &::before {
+    background-image: url(../images/advanteges/ice-crema.png);
+  }
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.23;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.71;
+  text-align: center;
+  color: #fcfcfc;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
