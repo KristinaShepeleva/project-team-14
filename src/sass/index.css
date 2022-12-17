@@ -145,22 +145,6 @@ ul, li {
   padding-left: auto;
 }
 
-.reviews__slider {
-  position: relative;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.reviews__foto {
-  max-width: 280px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .reviews__foto {
-    max-width: 100%;
-  }
-}
-
 .reviews__icon {
   margin: 0 auto;
   margin-top: 30px;
@@ -194,6 +178,7 @@ ul, li {
 }
 @media screen and (min-width: 768px) {
   .reviews__block {
+    font-size: 14px;
     max-width: 100%;
     border-radius: 24px;
     padding: 28px 80px;
@@ -201,6 +186,7 @@ ul, li {
 }
 @media screen and (min-width: 1200px) {
   .reviews__block {
+    font-size: 16px;
     padding: 43px 109px;
   }
 }
@@ -220,4 +206,35 @@ ul, li {
   .reviews__name {
     margin-bottom: 32px;
   }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .slick-dots {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slick-dots {
+    margin-bottom: 100px;
+  }
+}
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #d9d9d9;
+}
+
+.slick-active button {
+  background-color: #84a178;
 }
