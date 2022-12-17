@@ -1,10 +1,34 @@
 <header class="page-header">
   <div class="container page-header_container">
-    <a class="logo" href="index.html" aria-label="Ice cream logo">
-      <svg class="logo_img" width="40" height="37">
-        <use href="./images/symbol-defs.svg#icon-ice-crema"></use>
-      </svg>
-    </a>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/header/logo_l@1x.png 1x,
+          ./images/header/logo_l@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/header/logo_m@1x.png 1x,
+          ./images/header/logo_m@2x.png 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/header/logo_s@1x.png 1x,
+          ./images/header/logo_s@2x.png 2x
+        "
+      />
+      <img
+        src="./images/header/logo_s@1x.png"
+        alt="logo ice cream"
+        class="logo"
+        loading="lazy"
+      />
+    </picture>
     <nav class="nav">
       <ul class="nav_list">
         <li class="nav_item">
@@ -21,7 +45,7 @@
         </li>
       </ul>
     </nav>
-    <!-- Кнопка для мобільного меню -->
+    <!-- Кнопка для відкритя мобільного меню -->
     <button
       class="menu-toggle js-open-menu"
       aria-expanded="false"
@@ -31,31 +55,66 @@
         <use href="./images/symbol-defs.svg#eva_menu-fill"></use>
       </svg>
     </button>
-    <button type="button" class="">Buy now</button>
+    <button type="button" class="page-header_button">
+      Buy now
+      <svg class="page-header_icon" width="12" height="12">
+        <use href="./images/symbol-defs.svg#arrow-right-bold"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
 <!-- Меню для мобілки та таблет-->
 <div class="menu-container js-menu-container" id="mobile-menu">
+  <picture class="menu_logo">
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/header/logo_m@1x.png 1x,
+        ./images/header/logo_m@2x.png 2x
+      "
+    />
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/header/logo_s@1x.png 1x,
+        ./images/header/logo_s@2x.png 2x
+      "
+    />
+    <img
+      src="./images/header/logo_s@1x.png"
+      alt="logo ice cream"
+      loading="lazy"
+    />
+  </picture>
+
   <button class="menu-toggle js-close-menu">
-    <svg class="menu-icon-close" width="40" height="40">
+    <svg class="menu-icon-close" width="32" height="32">
       <use href="./images/symbol-defs.svg#ep_close"></use>
     </svg>
   </button>
+
   <!-- Потрібно на інші розділи додати якір через id="about" -->
-  <ul class="mobile-menu">
+  <ul class="mobile-menu_list">
     <li class="mobile-menu_item">
-      <a href="index.html" class="link mobile-menu_link">Home</a>
+      <a href="index.html" class="mobile-menu_link">Home</a>
     </li>
     <li class="mobile-menu_item">
-      <a href="#about" class="link mobile-menu_link">How it’s made?</a>
+      <a href="#about" class="mobile-menu_link mobile-menu_link--current"
+        >How it’s made?</a
+      >
     </li>
     <li class="mobile-menu_item">
-      <a href="#products" class="link mobile-menu_link">Our products</a>
+      <a href="#products" class="mobile-menu_link">Our products</a>
     </li>
     <li class="mobile-menu_item">
-      <a href="#contact" class="link mobile-menu_link">Contact</a>
+      <a href="#contact" class="mobile-menu_link">Contact</a>
     </li>
   </ul>
-  <button type="button" class="mobile-menu_button">Buy now</button>
+  <button type="button" class="mobile-menu_button">
+    Buy now
+    <svg class="mobile-menu_icon" width="12" height="12">
+      <use href="./images/symbol-defs.svg#arrow-right-bold"></use>
+    </svg>
+  </button>
 </div>
