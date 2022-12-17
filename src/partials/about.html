@@ -4,7 +4,18 @@
     <h2 class="about__title">how it’s made?</h2>
     <div class="about__card">
         <div class="about__decoration">
-            <img class="about__img" src="" alt="">
+            <img class="about__img" srcset="
+
+            ./images/about/about_img_desk_1x.jpg 490w,
+            ./images/about/about_img_desk_2x.jpg 980w,
+            ./images/about/about_img_tablet_1x.jpg 330w,
+            ./images/about/about_img_tablet_2x.jpg 660w,
+            ./images/about/about_img_mob_1x.jpg 279w,
+            ./images/about/about_img_mob_2x.jpg 558w"
+
+            sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, (min-width: 480px) 279px, 100vw"
+
+            src="./images/about/about_img_desk_1x.jpg" alt="">
         </div>
 
         <div class="about__information">
