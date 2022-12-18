@@ -104,7 +104,7 @@
 
 .location__address {
   display: inline-block;
-  min-width: 212px;
+  
 
   font-weight: 500;
   font-size: 12px;
@@ -113,13 +113,13 @@
   color: var(--brown-accent);
 
   @media screen and (min-width: 768px) {
-    min-width: 158px;
+    
 
     font-size: 14px;
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 288px;
+    
 
     font-size: 16px;
   }
@@ -182,7 +182,7 @@
 
 .address__link {
   display: block;
-  min-width: 212px;
+ 
 
   font-weight: 500;
   font-size: 12px;
@@ -190,12 +190,12 @@
   color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
-    min-width: 151px;
+    
     font-size: 14px;
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 173px;
+    
     font-size: 16px;
   }
 }
