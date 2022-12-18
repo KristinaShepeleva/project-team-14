@@ -6,6 +6,12 @@
   display: flex;
   align-items: center;
   padding-top: 12px;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 8px;
+  }
   //   outline: 2px solid green;
   //   outline-offset: -2px;
 }
@@ -25,12 +31,16 @@
 .nav_list {
   display: flex;
 }
-.nav_item:not(:last-child) {
-  margin-right: 28px;
+
+.nav_item {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
 }
+
 .nav_link {
-  padding-top: 32px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-weight: 700;
   line-height: calc(20 / 16);
