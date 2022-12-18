@@ -1,13 +1,12 @@
 .footer-site {
   background-color: var(--green-bg);
-
+  padding-top: 60px;
   @media screen and (min-width: 768px) {
       padding-top: 40px;
 }
     @media screen and (min-width: 1200px) {
-      padding-top: 60px;
+      padding-top: 120px;
     }
-
 }
 
 .footer-site__wrap {
