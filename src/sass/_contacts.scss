@@ -51,11 +51,10 @@
   }
 }
 
-.contacts__item-container {
+.location__item {
   padding: 40px 32px 0;
 
-&::after {
-   
+  &::after {
     content: '';
     display: block;
     width: 100%;
@@ -65,10 +64,7 @@
   }
 }
 
-
-
-
-.contacts__link {
+.location__link {
   display: inline-block;
   font-weight: 500;
   font-size: 12px;
@@ -89,7 +85,7 @@
   }
 }
 
-.contacts__title {
+.location__title {
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 8px;
@@ -106,11 +102,10 @@
   }
 }
 
-.contacts__address {
+.location__address {
   display: inline-block;
   min-width: 212px;
-  
-  
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -119,25 +114,18 @@
 
   @media screen and (min-width: 768px) {
     min-width: 158px;
-   
+
     font-size: 14px;
   }
 
   @media screen and (min-width: 1200px) {
     min-width: 288px;
-   
+
     font-size: 16px;
   }
 }
 
-.contacts__address-current {
-  position: relative;
-  color: var(--brown-accent);
-
- 
-}
-
-.schedule__container {
+.schedule__list {
   padding: 24px 32px;
 
   @media screen and (min-width: 768px) {
@@ -175,23 +163,27 @@
   }
 }
 
-.address__container {
+.address__list {
   padding: 0 32px 24px;
-  
+
   &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1;
-      
-      background-color: var(--light-grey);
-    }
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1;
+
+    background-color: var(--light-grey);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 32px 40px;
+  }
 }
 
 .address__link {
   display: block;
   min-width: 212px;
-  
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -208,7 +200,6 @@
   }
 }
 
-
 .address__item:not(:last-child) {
   margin-bottom: 6px;
   padding-top: 24px;
@@ -220,7 +211,6 @@
     }
   }
 }
-
 
 .contacts__btns {
   display: flex;
@@ -270,7 +260,9 @@
   }
 
   &:focus {
+    background-color: var(--green-hover-focus);
     color: var(--whity-color);
+    outline: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -291,9 +283,11 @@
   &:focus {
     color: var(--whity-color);
     border: 2px solid var(--green-hover-focus);
+    outline: none;
   }
 }
 
 .contacts__btn-icon {
   margin-left: 7px;
+  fill: currentColor;
 }
