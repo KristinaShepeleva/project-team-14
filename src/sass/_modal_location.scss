@@ -43,11 +43,19 @@
 }
 
 .location-modal__title {
-  padding-bottom: 20px;
+padding-bottom: 20px;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+ 
+  color: var( --primary-text-color);
 }
 
 .location-modal__thumb {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .close-btn-modal {
@@ -66,6 +74,7 @@
   border-radius: 50%;
   border-color: transparent;
   cursor: pointer;
+  background-color: transparent;
 
   transition-property: fill;
   transition-duration: 250ms;
