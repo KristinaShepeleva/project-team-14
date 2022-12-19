@@ -7,9 +7,14 @@
 }
 
 .swiper {
-  max-width: 280px;
-  height: 130px;
+  height: auto;
   border-radius: 8px;
+
+  @media screen and (min-width: 480px) {
+    border-radius: 18px;
+    max-width: 450px;
+    height: 327px;
+  }
 
   @media screen and (min-width: 768px) {
     border-radius: 18px;

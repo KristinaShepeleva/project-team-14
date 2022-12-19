@@ -22,10 +22,12 @@
 }
 
 .advantages__item {
-  max-width: 230px;
   margin: 0 auto;
   text-align: center;
 
+  @media screen and (min-width: 480px) {
+    width: 230px;
+  }
   @media screen and (min-width: 768px) {
     width: 152px;
   }
