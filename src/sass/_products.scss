@@ -91,10 +91,13 @@
 		background-color: var(--brown-accent);
 	}
 
+	@media screen and (max-width: 480px) {
+		max-width: 280px;
+	}
+
 	@media screen and (max-width: 767px) {
 		margin: auto;
 		margin-bottom: 168px;
-		max-width: 280px;
 
 		&:last-child {
 			margin-bottom: 0;
