@@ -1,5 +1,5 @@
 .hero {
-  background-color: #84a178;
+  background-color: var(--green-bg);
 }
 .hero_container {
   position: relative;
@@ -17,37 +17,35 @@
     padding-bottom: 0;
   }
 
-  background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-
-  //   mobile screen
-  background-image: url(../images/hero/points_s@1x.png);
+  background-repeat: no-repeat;
+  background-image: url('../images/hero/points_s@1x.png');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/points_s@2x.png);
+    background-image: url('../images/hero/points_s@2x.png');
   }
 
-  // tablet screen
   @media screen and (min-width: 768px) {
-    background-image: url(../images/hero/points_m@1x.png);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/points_m@2x.png);
+    background-image: url('../images/hero/points_m@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/points_m@2x.png');
+    }
   }
 
-  // desktop screen
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/hero/points_l@1x.png);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/points_l@2x.png);
+    background-image: url('../images/hero/points_l@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/points_l@2x.png');
+    }
   }
 }
 
@@ -61,7 +59,7 @@
   line-height: calc(33 / 26);
   text-transform: uppercase;
 
-  color: #fcfcfc;
+  color: var(--text-color-light);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
@@ -130,7 +128,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-buttons_link--first:focus {
-    color: #fcfcfc;
+    color: var(--text-color-light);
     border-color: var(--green-hover-focus);
   }
   .hero-buttons_link--first:visited {
@@ -174,7 +172,7 @@
 }
 
 .hero-buttons_link--second:focus {
-  color: #fcfcfc;
+  color: var(--text-color-light);
 }
 
 .hero-buttons_link--second:visited {
@@ -196,6 +194,7 @@
     right: 92px;
   }
 }
+
 // Зображеня тарілки з морозивом
 .hero_thumb--big {
   display: flex;
@@ -249,7 +248,7 @@
     font-size: 12px;
     line-height: calc(17 / 12);
 
-    color: #fcfcfc;
+    color: var(--text-color-light);
   }
   @media screen and (min-width: 1200px) {
     max-width: 200px;
@@ -260,7 +259,7 @@
   }
 }
 .hero_arrow {
-  fill: #fcfcfc;
+  fill: var(--text-color-light);
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -311,7 +310,7 @@
   font-weight: 400;
   font-size: 8px;
   line-height: calc(10 / 8);
-  color: #fcfcfc;
+  color: var(--text-color-light);
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
