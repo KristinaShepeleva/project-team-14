@@ -186,7 +186,11 @@
 .hero_img--first {
   position: absolute;
   bottom: 0;
-  right: 60px;
+
+  @media screen and (max-width: 767px) {
+    right: 50%;
+    transform: translate(50%);
+  }
 
   @media screen and (min-width: 768px) {
     right: 92px;
