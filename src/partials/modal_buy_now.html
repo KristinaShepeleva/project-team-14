@@ -1,11 +1,80 @@
 <div class="buy-now-modal modal" data-modal="buy-now">
     <button class="buy-now-modal__close-btn close-btn-modal js-modal-close">
         <svg class="buy-now-modal__icon-clse">
-          <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+            <use href="./images/symbol-defs.svg#icon-close-modal"></use>
         </svg>
     </button>
-      <p class="buy-now-modal__title">
+    <h2 class="buy-now-modal__title">
         Buy now
-      </p>
-    
+    </h2>
+    <div class="buy-nom-modal__list">
+        <ul class="buy-now-modal__item">
+            <li class="buy-now-modal__card buy-now-modal__card--cream">
+                <picture class="buy-now__image-card">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/products/ice-crem-dt1@1x.png 1x, ./images/products/ice-crem-dt1@2x.png 2x">
+                    <source media="(max-width: 767px)"
+                        srcset="./images/products/ice-crem-mb1@1x.png 1x, ./images/products/ice-crem-mb1@2x.png 2x">
+                    <img class="products__card-label" src="./images/products/ice-crem-mb1@1x.png" loading="lazy"
+                        alt="ice cream">
+                </picture>
+                <input type="checkbox" id="icecream" class="container-buy-now__card-check visually-hidden"
+                    name="confirmation" />
+                <div class="buy-now__wrapper wrapper-buy-now__ice-cream">
+                    <label for="icecream" class="container-buy-now__card">ice cream</label>
+                </div>
+            </li>
+            <li class="buy-now-modal__card buy-now-modal__card--coffee">
+                <picture class="buy-now__image-card">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/products/ice-crem-dt2@1x.png 1x, ./images/products/ice-crem-dt2@2x.png 2x">
+                    <source media="(max-width: 767px)"
+                        srcset="./images/products/ice-crem-mb2@1x.png 1x, ./images/products/ice-crem-mb2@2x.png 2x">
+                    <img class="products__card-label" src="./images/products/ice-crem-mb2@1x.png" loading="lazy"
+                        alt="ice cream">
+                </picture>
+                <input type="checkbox" id="ice coffee" class="container-buy-now__card-check visually-hidden"
+                    name="confirmation" />
+                <div class="buy-now__wrapper wrapper-buy-now__ice-coffee">
+                    <label for="ice coffee" class="container-buy-now__card">ice coffee</label>
+                </div>
+            </li>
+            <li class="buy-now-modal__card buy-now-modal__card--milkshake">
+                <picture class="buy-now__image-card">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/products/ice-crem-dt3@1x.png 1x, ./images/products/ice-crem-dt3@2x.png 2x">
+                    <source media="(max-width: 767px)"
+                        srcset="./images/products/ice-crem-mb3@1x.png 1x, ./images/products/ice-crem-mb3@2x.png 2x">
+                    <img class="products__card-label" src="./images/products/ice-crem-mb3@1x.png" loading="lazy"
+                        alt="ice cream">
+                </picture>
+                <input type="checkbox" id="milkshake" class="container-buy-now__card-check visually-hidden"
+                    name="confirmation" />
+                <div class="buy-now__wrapper wrapper-buy-now__milkshake">
+                    <label for="milkshake" class="container-buy-now__card">milkshake</label>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <form class="franchise-modal__form" action="franchis-modal__form">
+                <label class="franchise-modal__field">
+                    <input class="franchise-modal__input" type="text" name="name" placeholder="Name" required />
+                </label>
+
+                <label class="franchise-modal__field">
+                    <input class="franchise-modal__input" type="tel" name="name" placeholder="Phone" required />
+                </label>
+
+                <label class="franchise-modal__field">
+                    <textarea class="franchise-modal__message" name="comments" rows="8"
+                        placeholder="Comment"></textarea>
+                </label>
+                <button class="buy-now-modal__modal-btn modal-btn" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+    </div>
 </div>
