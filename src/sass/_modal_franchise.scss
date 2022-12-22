@@ -51,34 +51,10 @@
 
   @media screen and (min-width: 768px) {
     width: 568px;
+    padding: 32px 60px;
   }
 
 }
-
-
-// =============================================================
-// .franchise-modal {
-//   display: block;
-//   padding: 28px 28px;
-//   width: calc(100vw - 30px);
-
-
-//   background: #fcfcfc;
-//   border: 2px solid var(--yellow-accent);
-//   border-radius: 10px;
-
-//   @media screen and (min-width: 480px) {
-//     width: 280px;
-//   }
-
-//   @media screen and (min-width: 767px) {
-//     width: 568px;
-//     padding: 32px 60px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//   }
-// }
 
 .franchise-modal__title {
   font-family: var(--title-font);
@@ -280,7 +256,7 @@
   &:hover {
     opacity: 1;
     transform: rotate(90deg);
-    fill: var(--yellow-accent);
+    fill: var(--green-hover-focus);
   }
 
   &:active {
