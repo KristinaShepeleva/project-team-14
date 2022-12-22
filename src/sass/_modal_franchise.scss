@@ -1,3 +1,4 @@
+//      modal global style
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -16,11 +17,14 @@
   scale: 1;
 }
 
-
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.modal.active {
+  transform: perspective(568px) translate(-50%, -50%) rotateX(0deg);
 }
 
 .modal {
@@ -33,7 +37,7 @@
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: perspective(568px) translate(-50%, -300%) rotateX(45deg);
   z-index: 30;
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -43,7 +47,7 @@
   padding: 28px;
   background-color: var(--text-color-light);
 
-  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+  transition: all 0.7s cubic-bezier(.4, 0, .2, 1);
 
   @media screen and (min-width: 480px) {
     width: 440px;
@@ -55,6 +59,8 @@
   }
 
 }
+
+//       end modal global style
 
 .franchise-modal__title {
   font-family: var(--title-font);
