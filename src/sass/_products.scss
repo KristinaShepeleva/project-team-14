@@ -224,4 +224,8 @@
 
 .products__card-icon {
 	fill: var(--primary-text-color);
+
+	&:hover, &:focus  {
+		fill: var(--green-hover-focus);
+	}
 }
