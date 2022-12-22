@@ -79,6 +79,9 @@
 	text-align: center;
 	border-radius: 24px;
 
+	transform: scale3d(1, 1, 1);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	&--green {
 		background-color: var(--green-bg-two);
 	}
@@ -125,7 +128,10 @@
 		height: 536px;
 		border-radius: 24px;
 	}
+}
 
+.products__card:hover {
+	transform: scale3d(1.05, 1.05, 1.05);
 }
 
 .products__card-foto {
@@ -185,7 +191,6 @@
 		top: -20px;
 	}
 }
-
 
 .products__card-title {
 	font-family: var(--primery-font);
