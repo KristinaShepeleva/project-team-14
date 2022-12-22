@@ -160,4 +160,6 @@
 
     color: var(--primary-text-color);
     cursor: pointer;
+
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
 }
