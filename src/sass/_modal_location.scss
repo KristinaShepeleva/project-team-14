@@ -31,7 +31,20 @@
 }
 
 .location-modal__thumb {
+  display: flex;
+  justify-content: center;
   padding-bottom: 20px;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 260px;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+  }
 }
 
 .location-modal__link-map {
