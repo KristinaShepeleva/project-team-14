@@ -1,33 +1,19 @@
 <header class="page-header">
   <div class="container page-header_container">
     <picture>
-      <source
-        media="(min-width: 1200px)"
-        srcset="
+      <source media="(min-width: 1200px)" srcset="
           ./images/header/logo_l@1x.png 1x,
           ./images/header/logo_l@2x.png 2x
-        "
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
+        " />
+      <source media="(min-width: 768px)" srcset="
           ./images/header/logo_m@1x.png 1x,
           ./images/header/logo_m@2x.png 2x
-        "
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="
+        " />
+      <source media="(max-width: 767px)" srcset="
           ./images/header/logo_s@1x.png 1x,
           ./images/header/logo_s@2x.png 2x
-        "
-      />
-      <img
-        src="./images/header/logo_s@1x.png"
-        alt="logo ice cream"
-        class="logo"
-        loading="lazy"
-      />
+        " />
+      <img src="./images/header/logo_s@1x.png" alt="logo ice cream" class="logo" loading="lazy" />
     </picture>
     <nav class="nav">
       <ul class="nav_list">
@@ -46,20 +32,12 @@
       </ul>
     </nav>
     <!-- Кнопка для відкритя мобільного меню -->
-    <button
-      class="menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="menu-icon-open" width="32" height="32">
         <use href="./images/symbol-defs.svg#eva_menu-fill"></use>
       </svg>
     </button>
-    <button
-      type="button"
-      class="page-header_button js-open-modal"
-      data-modal="buy-now"
-    >
+    <button type="button" class="page-header_button js-open-modal" data-modal="buy-now">
       Buy now
       <svg class="page-header_icon" width="12" height="12">
         <use href="./images/symbol-defs.svg#icon-ep_arrow-right-bold"></use>
@@ -71,25 +49,15 @@
 <!-- Меню для мобілки та таблет-->
 <div class="menu-container js-menu-container" id="mobile-menu">
   <picture class="menu_logo">
-    <source
-      media="(min-width: 768px)"
-      srcset="
+    <source media="(min-width: 768px)" srcset="
         ./images/header/logo_m@1x.png 1x,
         ./images/header/logo_m@2x.png 2x
-      "
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="
+      " />
+    <source media="(max-width: 767px)" srcset="
         ./images/header/logo_s@1x.png 1x,
         ./images/header/logo_s@2x.png 2x
-      "
-    />
-    <img
-      src="./images/header/logo_s@1x.png"
-      alt="logo ice cream"
-      loading="lazy"
-    />
+      " />
+    <img src="./images/header/logo_s@1x.png" alt="logo ice cream" loading="lazy" />
   </picture>
 
   <button class="menu-toggle js-close-menu">
@@ -105,21 +73,17 @@
         <a href="index.html" class="mobile-menu_link">Home</a>
       </li>
       <li class="mobile-menu_item">
-        <a href="#about" class="mobile-menu_link mobile-menu_link--current"
-          >How it’s made?</a
-        >
+        <a href="#about" class="mobile-menu_link mobile-menu_link--current">How it’s made?</a>
       </li>
       <li class="mobile-menu_item">
-        <a href="#products" class="mobile-menu_link" target="_self"
-          >Our products</a
-        >
+        <a href="#products" class="mobile-menu_link" target="_self">Our products</a>
       </li>
       <li class="mobile-menu_item">
         <a href="#contact" class="mobile-menu_link" target="_self">Contact</a>
       </li>
     </ul>
   </nav>
-  <button type="button" class="mobile-menu_button">
+  <button type="button" class="mobile-menu_button js-open-modal" data-modal="buy-now">
     Buy now
     <svg class="mobile-menu_icon" width="12" height="12">
       <use href="./images/symbol-defs.svg#icon-ep_arrow-right-bold"></use>
