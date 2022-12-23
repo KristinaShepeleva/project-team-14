@@ -172,7 +172,7 @@
     color: var(--text-color-light);
     border-color: var(--green-hover-focus);
   }
-  .hero-buttons_link--first:visited {
+  .hero-buttons_link--first:disabled {
     border-color: var(--disabled-grey);
   }
 }
@@ -217,7 +217,7 @@
   color: var(--text-color-light);
 }
 
-.hero-buttons_link--second:visited {
+.hero-buttons_link--second:disabled {
   color: var(--disabled-grey);
 }
 
